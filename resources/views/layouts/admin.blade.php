@@ -53,25 +53,25 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="./dashboard.blade.php">
+            <a href="{{ route('home') }}">
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <li>
-            <a href="./icons.php">
+            <a href="{{ route('icons') }}">
               <i class="now-ui-icons education_atom"></i>
               <p>Icons</p>
             </a>
           </li>
           <li>
-            <a href="./map.html">
+            <a href="">
               <i class="now-ui-icons location_map-big"></i>
               <p>Maps</p>
             </a>
           </li>
           <li>
-            <a href="./notifications.html">
+            <a href="{{ route('notifications') }}">
               <i class="now-ui-icons ui-1_bell-53"></i>
               <p>Notifications</p>
             </a>
