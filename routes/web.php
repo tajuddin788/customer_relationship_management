@@ -21,5 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/test', [App\Http\Controllers\HomeController::class, 'test'])->name('test');
-
-
+Route::get('/icons', [App\Http\Controllers\HomeController::class, 'icon'])->name('icons');
+Route::get('/notifications', [App\Http\Controllers\HomeController::class, 'notification'])->name('notifications');

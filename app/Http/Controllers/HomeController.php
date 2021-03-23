@@ -29,5 +29,13 @@ class HomeController extends Controller
     {
         return view('test');
     }
+    public function icon()
+    {
+        return view('icons');
+    }
+    public function notification()
+    {
+        return view('notifications');
+    }
 
 }

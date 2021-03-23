@@ -14,12 +14,12 @@ class CreateCustomersTable extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
-            $table->increments('customerId');
+            $table->increments('id');
             $table->integer('customerPhone');
             $table->string('customerAddress');
             $table->string('customerEmail');
-            $table->integer('userId')->unsigned()->nullable();
-            $table->foreign('userId')->references('userId')->on('users')->onDelete('cascade');
+            $table->integer('user_id')->unsigned()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

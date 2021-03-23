@@ -17,8 +17,8 @@ class CreatePermissionsTable extends Migration
             $table->increments('permissionId');
             $table->enum('permissionMode',['create','read','update','delete']);
             $table->mediumText('permissionDetails');
-            $table->integer('roleId')->unsigned()->nullable();
-            $table->foreign('roleId')->references('roleId')->on('user_roles')->onDelete('cascade');
+            $table->integer('role_id')->unsigned()->nullable();
+            $table->foreign('role_id')->references('id')->on('user_roles')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -15,8 +15,8 @@ class CreateIndividualCustomersTable extends Migration
     {
         Schema::create('individual_customers', function (Blueprint $table) {
             $table->string('name');
-            $table->integer('customerId')->unsigned()->nullable();
-            $table->foreign('customerId')->references('customerId')->on('customers')->onDelete('cascade');
+            $table->integer('customer_id')->unsigned()->nullable();
+            $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
 
             $table->timestamps();
         });
