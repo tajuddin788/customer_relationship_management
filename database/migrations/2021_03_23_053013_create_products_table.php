@@ -19,8 +19,8 @@ class CreateProductsTable extends Migration
             $table->double('productCostingPrice');
             $table->double('productSellingPrice');
             $table->string('productDetails');
-            $table->timestamp('createdBy')->nullable();
-            $table->timestamp('updatedBy')->nullable();
+            $table->string('createdBy')->nullable();
+            $table->string('updatedBy')->nullable();
             $table->timestamps();
         });
     }

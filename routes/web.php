@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//use App\Http\Controllers\CustomerController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/test', [App\Http\Controllers\HomeController::class, 'test'])->name('test');
 Route::get('/icons', [App\Http\Controllers\HomeController::class, 'icon'])->name('icons');
 Route::get('/notifications', [App\Http\Controllers\HomeController::class, 'notification'])->name('notifications');
+
+Route::resource('/customers',App\Http\Controllers\CustomerController::class);
+//Route::resource('/customers',CustomerController::class);
