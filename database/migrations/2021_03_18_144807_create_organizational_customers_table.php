@@ -18,7 +18,6 @@ class CreateOrganizationalCustomersTable extends Migration
             $table->string('organizationPhone');
             $table->string('ownerName');
             $table->string('liablePersonName');
-            $table->string('liablePersonPhone');
             $table->integer('customer_id')->unsigned()->nullable();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
 

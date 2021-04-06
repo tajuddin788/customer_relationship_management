@@ -40,7 +40,7 @@
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="orange">
+    <div class="sidebar" data-color="blue">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
@@ -61,9 +61,9 @@
             </a>
           </li>
           <li>
-            <a href="{{ route('icons') }}">
+            <a href="{{ route('customers.index') }}">
               <i class="now-ui-icons education_atom"></i>
-              <p>Icons</p>
+              <p>Customers</p>
             </a>
           </li>
           <li>
@@ -187,8 +187,8 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="panel-header panel-header-lg">
-        <canvas id="bigDashboardChart"></canvas>
+      <div class="panel-header panel-header-xs">
+        <canvas id=""></canvas>
       </div>
       @yield('content')
       <footer class="footer">

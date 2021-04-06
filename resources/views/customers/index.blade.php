@@ -3,11 +3,13 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="pull-left" style="padding-left:10px;">
                 <h2>Check all customers</h2>
+
+                <a class="btn btn-success" href="{{ route('customers.create') }}"> Create new customer</a>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('customers.create') }}"> Create new customer</a>
+                
             </div>
         </div>
     </div>
@@ -18,9 +20,9 @@
         </div>
     @endif
    
-    <table class="table table-bordered">
+    <table class="table table-bordered" style="padding-left:10px;">
         <tr>
-            <th>CustomerID</th>
+            <th>#</th>
             <th>PhoneNumber</th>
             <th>Address</th>
             <th>Email</th>

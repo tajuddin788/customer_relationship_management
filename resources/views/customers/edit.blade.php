@@ -1,12 +1,12 @@
 @extends('layouts.admin')
    
 @section('content')
-    <div class="row">
+    <div class="row" style="padding-left:10px;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
                 <h2>Edit customer</h2>
             </div>
-            <div class="pull-right">
+            <div class="pull-right" style="padding-right:10px;">
                 <a class="btn btn-primary" href="{{ route('customers.index') }}"> Back</a>
             </div>
         </div>
@@ -27,7 +27,7 @@
         @csrf
         @method('PUT')
    
-         <div class="row">
+         <div class="row" style="padding-left:50px;">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Phone Number:</strong>
